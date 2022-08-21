@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "skyblock/item/petitem/pet_exp_epic",
+        "layer1": "item/fishing_rod"
+    }
+}

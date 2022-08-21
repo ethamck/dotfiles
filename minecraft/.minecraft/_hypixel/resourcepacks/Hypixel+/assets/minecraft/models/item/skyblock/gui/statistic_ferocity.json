@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/red_dye",
+        "layer1": "skyblock/gui/statistic_ferocity"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "skyblock/item/amalgamated_crimsonite",
+        "layer1": "skyblock/item/amalgamated_crimsonite"
+    }
+}

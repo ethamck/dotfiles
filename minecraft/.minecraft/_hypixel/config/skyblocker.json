@@ -1,0 +1,75 @@
+{
+  "general": {
+    "enableUpdateNotification": true,
+    "backpackPreviewWithoutShift": false,
+    "bars": {
+      "enableBars": true,
+      "barpositions": {
+        "healthBarPosition": "LAYER1",
+        "manaBarPosition": "LAYER1",
+        "defenceBarPosition": "LAYER1",
+        "experienceBarPosition": "LAYER1"
+      }
+    },
+    "itemList": {
+      "enableItemList": true
+    },
+    "quicknav": {
+      "enableQuicknav": true
+    },
+    "itemTooltip": {
+      "enableNPCPrice": true,
+      "enableAvgBIN": true,
+      "avg": "THREE_DAY",
+      "enableLowestBIN": true,
+      "enableBazaarPrice": true,
+      "enableMuseumDate": true
+    },
+    "hitbox": {
+      "oldFarmlandHitbox": true,
+      "oldLeverHitbox": false
+    },
+    "lockedSlots": []
+  },
+  "locations": {
+    "dungeons": {
+      "enableMap": true,
+      "solveThreeWeirdos": true,
+      "blazesolver": true,
+      "solveTrivia": true,
+      "terminals": {
+        "solveColor": true,
+        "solveOrder": true,
+        "solveStartsWith": true
+      }
+    },
+    "dwarvenMines": {
+      "enableDrillFuel": true,
+      "solveFetchur": true,
+      "solvePuzzler": true,
+      "dwarvenHud": {
+        "enabled": true,
+        "enableBackground": true,
+        "x": 10,
+        "y": 10
+      }
+    }
+  },
+  "messages": {
+    "hideAbility": "PASS",
+    "hideHeal": "PASS",
+    "hideAOTE": "PASS",
+    "hideImplosion": "PASS",
+    "hideMoltenWave": "PASS",
+    "hideAds": "PASS",
+    "hideTeleportPad": "PASS",
+    "hideCombo": "PASS",
+    "hideAutopet": "PASS",
+    "hideMana": false
+  },
+  "richPresence": {
+    "enableRichPresence": false,
+    "info": "LOCATION",
+    "cycleMode": false
+  }
+}

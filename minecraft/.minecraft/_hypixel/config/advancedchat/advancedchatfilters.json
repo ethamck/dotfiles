@@ -1,0 +1,152 @@
+{
+  "advanced_filters_on": false,
+  "filters": [
+    {
+      "name": "Hypixel - Lobby Join Messages",
+      "active": true,
+      "stripColors": true,
+      "findString": "\\[MVP\\+{1,2}\\] \\S* joined the lobby!",
+      "findType": "regex",
+      "replaceType": "fullmessage",
+      "replaceTo": "",
+      "replaceTextColor": false,
+      "textColor": "#FFFFFFFF",
+      "replaceBackgroundColor": false,
+      "backgroundColor": "#FFFFFFFF",
+      "processors": {
+        "forward": {
+          "active": true
+        },
+        "actionbar": {
+          "active": false
+        },
+        "sound": {
+          "active": false,
+          "notifySound": "none",
+          "soundPitch": 1.0,
+          "soundVolume": 1.0
+        },
+        "narrator": {
+          "active": false,
+          "message": "$1"
+        },
+        "konstruct": {
+          "active": false,
+          "nodeData": ""
+        }
+      },
+      "order": 0
+    },
+    {
+      "name": "Hypixel - Mystery Boxes",
+      "active": true,
+      "stripColors": true,
+      "findString": "Mystery Box",
+      "findType": "literal",
+      "replaceType": "fullmessage",
+      "replaceTo": "",
+      "replaceTextColor": false,
+      "textColor": "#FFFFFFFF",
+      "replaceBackgroundColor": false,
+      "backgroundColor": "#FFFFFFFF",
+      "processors": {
+        "forward": {
+          "active": true
+        },
+        "actionbar": {
+          "active": false
+        },
+        "sound": {
+          "active": false,
+          "notifySound": "none",
+          "soundPitch": 1.0,
+          "soundVolume": 1.0
+        },
+        "narrator": {
+          "active": false,
+          "message": "$1"
+        },
+        "konstruct": {
+          "active": false,
+          "nodeData": ""
+        }
+      },
+      "order": 0
+    },
+    {
+      "name": "Hypixel - Ranks",
+      "active": true,
+      "stripColors": true,
+      "findString": "\\[((VIP)|(MVP))\\+*\\] ",
+      "findType": "regex",
+      "replaceType": "onlymatch",
+      "replaceTo": "",
+      "replaceTextColor": false,
+      "textColor": "#FFFFFFFF",
+      "replaceBackgroundColor": false,
+      "backgroundColor": "#FFFFFFFF",
+      "processors": {
+        "forward": {
+          "active": true
+        },
+        "actionbar": {
+          "active": false
+        },
+        "sound": {
+          "active": false,
+          "notifySound": "none",
+          "soundPitch": 1.0,
+          "soundVolume": 1.0
+        },
+        "narrator": {
+          "active": false,
+          "message": "$1"
+        },
+        "konstruct": {
+          "active": false,
+          "nodeData": ""
+        }
+      },
+      "order": 0
+    },
+    {
+      "name": "Hypixel - Separators",
+      "active": true,
+      "stripColors": true,
+      "findString": "(-----------------------------------------)|(≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡)|(▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬)",
+      "findType": "regex",
+      "replaceType": "fullmessage",
+      "replaceTo": "",
+      "replaceTextColor": false,
+      "textColor": "#FFFFFFFF",
+      "replaceBackgroundColor": false,
+      "backgroundColor": "#FFFFFFFF",
+      "processors": {
+        "forward": {
+          "active": true
+        },
+        "actionbar": {
+          "active": false
+        },
+        "sound": {
+          "active": false,
+          "notifySound": "none",
+          "soundPitch": 1.0,
+          "soundVolume": 1.0
+        },
+        "narrator": {
+          "active": false,
+          "message": "$1"
+        },
+        "konstruct": {
+          "active": false,
+          "nodeData": ""
+        }
+      },
+      "order": 0
+    }
+  ],
+  "advancedfilters": [],
+  "importedfilters": [],
+  "config_version": 1
+}

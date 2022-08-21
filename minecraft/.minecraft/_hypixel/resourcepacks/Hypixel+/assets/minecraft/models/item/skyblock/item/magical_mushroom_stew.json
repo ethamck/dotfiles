@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/mushroom_stew",
+        "layer1": "skyblock/item/magical_mushroom_stew"
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "skyblock/item/hilt_of_true_ice"
+    }
+}

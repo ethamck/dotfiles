@@ -1,0 +1,8 @@
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+	include "us(workman)"
+	name[Group1] = "Workman-P Emacs";
+	key <TAB> { [ BackSpace ] };
+	key <TLDE> { [ Tab, ISO_Left_Tab ] };
+	key <BKSP> { [ quoteleft, asciitilde ] };
+};

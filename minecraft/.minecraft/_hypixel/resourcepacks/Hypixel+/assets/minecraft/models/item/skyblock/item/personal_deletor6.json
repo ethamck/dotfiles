@@ -1,0 +1,7 @@
+{
+	"parent": "block/template_cauldron_full",
+	"textures": {
+		"side": "skyblock/item/personal_deletor6",
+		"content": "block/lava_still"
+	}
+}

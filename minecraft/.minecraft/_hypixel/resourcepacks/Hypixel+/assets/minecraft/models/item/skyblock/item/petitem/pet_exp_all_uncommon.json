@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "skyblock/item/petitem/pet_exp_all",
+        "layer1": "skyblock/item/petitem/pet_exp_uncommon"
+    }
+}

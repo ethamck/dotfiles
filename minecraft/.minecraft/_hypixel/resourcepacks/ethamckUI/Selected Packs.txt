@@ -1,0 +1,13 @@
+Vanilla Tweaks Resource Pack
+Version: 1.18
+Packs:
+	BedrockTitle
+	DungeonsAlexSteve
+	SmashEnderman
+	SmootherFont
+	NoJavaEditionTitle
+	WitherHearts
+	PingColorIndicator
+	MoreCrosshairs-4AngledDot
+	NumberedHotbar
+	DarkUI

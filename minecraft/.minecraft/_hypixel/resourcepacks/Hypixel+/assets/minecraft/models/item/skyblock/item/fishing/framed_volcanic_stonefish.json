@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/item_frame",
+        "layer1": "skyblock/item/fishing/volcanic_stonefish"
+    }
+}

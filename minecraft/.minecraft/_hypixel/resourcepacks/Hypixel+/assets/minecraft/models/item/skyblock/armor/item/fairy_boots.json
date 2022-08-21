@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "skyblock/armor/item/fairy_boots",
+        "layer1": "skyblock/armor/item/fairy_boots_overlay"
+    }
+}

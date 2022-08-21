@@ -1,0 +1,9 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "gui/achoo",
+        "layer1": "skyblock/item/potions/jyrre_potion",
+        "layer2": "item/potion",
+        "layer3": "skyblock/item/potions/jyrre_potion2"
+    }
+}

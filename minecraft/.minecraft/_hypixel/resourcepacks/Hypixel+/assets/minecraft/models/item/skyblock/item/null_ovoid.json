@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "skyblock/item/null_ovoid",
+        "layer1": "skyblock/item/null_ovoid"
+    }
+}
