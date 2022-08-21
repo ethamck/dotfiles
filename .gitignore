@@ -1,0 +1,5 @@
+emacs/.config/emacs/elpa
+
+obs/.config/obs-studio/logs/*
+obs/.config/obs-studio/profiler_data/*
+
