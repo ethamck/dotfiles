@@ -30,8 +30,9 @@ if [ -f "$HOME/remindme" ]; then
 fi
 
 
-alias ls='ls --color=auto'
-alias l='ls -al'
+alias ls='exa'
+alias l='ls -1'
+alias la='ls -al'
 alias ..='cd ..'
 alias ...='..; ..'
 alias mk='touch'
@@ -56,7 +57,9 @@ alias nl='pvpn c --cc NL'
 
 alias flow='while true; do; dzr /user/4850608022/flow; done;'
 
-homeuse() {
+alias homeuse='exa */.git -d1; echo; exa -f;'
+
+homeuseold() {
 	# list repositories in the home directory
 	for repository in ~/*; do
 		if [ -d "$repository/.git" ]; then

@@ -23,7 +23,9 @@ Generally, my configuration is made to be run on a clean install of an applicati
 
 The Sway configuration prefers to keep it simple. Not much was really tweaked, but the keybindings now resemble Emacs instead of Vim.
 
-The background used is under `.local/share/backgrounds` (where it's supposed to be). To change that, just edit the sway configuration directly. As far as I know, [`interstellar.jpg`](//artstation.com/artwork/xYr0yW) was made by [Vadim Sadovski (ArtStation)](//artstation.com/vadimsadovski). Check out his other stuff!
+The backgrounds used are under `.local/share/backgrounds` (where they're supposed to be). To change that, just edit the sway configuration directly. As far as I know,
+* [`interstellar.jpg`](//artstation.com/artwork/xYr0yW) was made by [Vadim Sadovski (ArtStation)](//artstation.com/vadimsadovski).
+* [`seattle.jpg`](//commons.wikimedia.org/wiki/File:Seattle_Center_as_night_falls.jpg) was made by [Jeffery Hayes (personal)](//jeffery-hayes.com/needle.html) under [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
 
 *Why is my `gammastep` broken?:* I get headaches looking at screens that don't have some redshift, so my sway configuration executes gammastep oneshot at 3500K. You may consider either removing this line (it's near the end) or adding `killall gammastep; gammastep -l lat:lon` to your `.profile`.
 

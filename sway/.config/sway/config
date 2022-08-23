@@ -16,6 +16,7 @@ default_border none
 ## Example configuration: output HDMI-A-1 resolution 1920x1080 position 1920,0
 ## You can get the names of your outputs by running: swaymsg -t get_outputs
 output * scale 1.0 background ~/.local/share/backgrounds/interstellar.jpg fill
+exec "while true; do sleep 5m; swaymsg 'output * background $(shuf -n1 -e ~/.local/share/backgrounds/*) fill'; done;"
 ## My displays are a bit odd but this configuration works splendidly.
 ##             ##############
 ##             #  HDMI-A-1  #
