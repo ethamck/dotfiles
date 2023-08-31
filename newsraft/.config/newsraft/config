@@ -1,0 +1,12 @@
+bind n select-next
+bind p select-prev
+bind a select-first
+bind v select-next-page
+bind V select-prev-page
+bind e select-last
+bind N jump-to-next
+bind P jump-to-prev
+bind m enter
+bind x toggle-explore-mode
+bind h status-history-menu
+bind q quit

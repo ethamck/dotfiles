@@ -1,0 +1,14 @@
+width = 75%
+height = 75%
+border-width = 0
+outline-width = 0
+padding-left = 15%
+padding-top = 15%
+result-spacing = 15
+background-color = #0002
+scale = false
+
+font = monospace
+font-size = 16
+
+prompt-text = "> "

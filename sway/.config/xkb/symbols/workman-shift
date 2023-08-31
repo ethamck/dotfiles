@@ -1,0 +1,15 @@
+# https://wiki.archlinux.org/title/X_keyboard_extension
+
+partial alphanumeric_keys
+xkb_symbols "basic" {
+	name[Group1] = "English (Workman, shifted modifier keys)";
+
+	include "us(workman)"
+	key <BKSP> {[grave, asciitilde]};
+	key <TLDE> {[Tab, Tab]};
+	key <TAB> {[Control_L]};
+	key <CAPS> {[BackSpace, Escape, BackSpace, BackSpace]};
+	key <LCTL> {[Hyper_L]};
+
+	modifier_map Mod5 {<LCTL>};
+};
