@@ -3,9 +3,12 @@
 @ Blogs {720}
 https://lukesmith.xyz/index.xml "Luke Smith"
 https://cobra.vern.cc/rss.xml "~cobra"
+https://drewdevault.com/blog/index.xml	"Drew DeVault"
 https://placeviolette.net/atom.xml "classabbyamp"
 https://leahneukirchen.org/blog/index.atom "Leah Neukirchen"
 https://cadence.moe/blog/atom.xml "Cadence Ember"
+https://orowith2os.gitlab.io/feed.xml	"Oro"
+https://momi.ca/feed.xml	"Anjandev Momi"
 
 @ News {720}
 https://freedom.press/news/feed/ "Freedom of the Press"
