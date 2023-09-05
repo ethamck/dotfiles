@@ -53,6 +53,7 @@ bindsym $mod+Shift+Slash exec $term $SEARCH
 bindsym $mod+space exec swaymsg exec $($menu-run)
 
 bindsym $mod+Insert exec "wtype $(wl-paste)"
+bindsym Mod5+u exec wtype "$(printf 'import sys, unicodedata\nfor i in range(sys.maxunicode):\n\ttry:\n\t\tprint(\"%%s\\t%%s\\t%%s\" %% (hex(i), chr(i), unicodedata.name(chr(i))))\n\texcept ValueError:\n\t\tpass' | python | $menu | cut -f2)"
 
 bindsym $mod+Mod5+s exec 'GDK_BACKEND=x11 surf'
 	bindsym $mod+Mod5+Shift+s exec 'GDK_BACKEND=x11 surf duckduckgo.com'
