@@ -1,0 +1,25 @@
+# Most refresh times are derivative of 1440 (60 * 24) minutes
+
+@ Blogs {720}
+https://lukesmith.xyz/index.xml "Luke Smith"
+https://cobra.vern.cc/rss.xml "~cobra"
+https://drewdevault.com/blog/index.xml	"Drew DeVault"
+https://placeviolette.net/atom.xml "classabbyamp"
+https://leahneukirchen.org/blog/index.atom "Leah Neukirchen"
+https://cadence.moe/blog/atom.xml "Cadence Ember"
+https://orowith2os.gitlab.io/feed.xml	"Oro"
+https://momi.ca/feed.xml	"Anjandev Momi"
+
+@ News {720}
+https://freedom.press/news/feed/ "Freedom of the Press"
+
+@ Comics {1440}
+https://xkcd.com/atom.xml "xkcd"
+
+@ Distributions {2880}
+https://voidlinux.org/atom.xml "Void"
+https://www.archlinux.org/feeds/news "Arch"
+
+@ Packages {120}
+https://www.kernel.org/feeds/kdist.xml "linux" {2880}
+https://github.com/void-linux/void-packages/commits/master.atom "xbps"

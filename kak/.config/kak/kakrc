@@ -1,0 +1,6 @@
+face global Default default
+face global PrimarySelection default,bright-black
+face global MenuForeground default,bright-black
+face global MenuBackground default
+face global Information default
+set global ui_options terminal_assistant=none

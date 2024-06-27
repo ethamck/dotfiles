@@ -1,0 +1,18 @@
+# https://wiki.archlinux.org/title/X_keyboard_extension
+# https://www.x.org/releases/X11R6.7.0/doc/XKB-Enhancing4.html
+
+partial alphanumeric_keys
+xkb_symbols "basic" {
+	name[Group1] = "English (Workman, intl., shifted modifiers)";
+
+	include "us(workman-intl)"
+	key <AC11> {[apostrophe, quotedbl, dead_acute, dead_diaeresis]};
+	key <AE06> {[6, asciicircum, onequarter, dead_circumflex]};
+	key <BKSP> {[grave, asciitilde, dead_grave, dead_tilde]};
+	key <RALT> {[Escape]};
+	key <LCTL> {[ISO_Level3_Shift], type[group1]="ONE_LEVEL"};
+
+	key <ESC> {[Hyper_L]};
+	key <TLDE> {[Tab, Tab]};
+	key <TAB> {[Control_L]};
+};
