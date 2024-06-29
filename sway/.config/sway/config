@@ -54,10 +54,10 @@ bindsym $mod+Shift+$down move down
 bindsym $mod+Shift+$up move up
 bindsym $mod+Shift+$right move right
 
-bindsym $mod+Control+$left resize shrink width 10px left
-bindsym $mod+Control+$down resize grow height 10px down
-bindsym $mod+Control+$up resize shrink height 10px up
-bindsym $mod+Control+$right resize grow width 10px right
+bindsym $mod+Control+$left resize shrink width 10px
+bindsym $mod+Control+$down resize grow height 10px
+bindsym $mod+Control+$up resize shrink height 10px
+bindsym $mod+Control+$right resize grow width 10px
 
 bindsym $mod+Shift+Control+$left move workspace to output left
 bindsym $mod+Shift+Control+$down move workspace to output down
