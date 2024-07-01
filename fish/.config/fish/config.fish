@@ -53,6 +53,10 @@ if status is-interactive
 		yt-dlp -O "$(tput dim)%(id)s %(upload_date)s$(tput sgr0) %(channel)s - %(title)s" ytsearch15:"$argv"
 	end
 
+	function color-picker -d "Pick a color on screen"
+		grim -g (slurp -p) -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-
+	end
+
 	# Dotfile removal
 	alias wget 'wget --hsts-file="/tmp/wget-history"'
 	rm -fr ~/.pki ~/.gnome2 ~/.links ~/.surf ~/.grip

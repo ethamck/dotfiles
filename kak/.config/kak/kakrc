@@ -1,3 +1,11 @@
+set-option global tabstop 6
+set-option global indentwidth 0
+
+set-option global scrolloff 3,6
+
+eval %sh{kak-lsp --kakoune -s $kak_session}
+lsp-enable
+
 face global Default default
 face global PrimarySelection default,bright-black
 face global MenuForeground default,bright-black

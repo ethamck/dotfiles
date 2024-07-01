@@ -21,7 +21,7 @@ Windows are more minimal and have no title or gaps, instead only showing how the
 
 Backgrounds should be stored under `$XDG_DATA_HOME/backgrounds` (`~/.local/share/backgrounds`). I personally use [Ravimo](https://ko-fi.com/D1D54RIXT)'s [Liu artwork](https://drive.usercontent.google.com/download?id=1gQTeX30GvlygCpB-Mwc8NCtG90BkZwuw), which isn't distributed here.
 
-The bar is the regular `swaybar`. I don't like that Sway includes it by default, but since it is, I use it to tell me processor utilization and temperature, memory utilization, graphics utilization, battery, and time. All of these are done using `/sys` and `/proc` paths and may not work on other non-Linux operating systems.
+The bar is the regular `swaybar`. I don't like that Sway includes it by default, but since it is, I use it to tell me processor utilization and temperature, memory utilization, graphics utilization, battery, and time. All of these are done using `/sys` and `/proc` paths and may not work on other non-Linux operating systems. Memory is retrieved using the `procps-ng` edition of the `free` utility, and won't work on BusyBox unless you install it (which overrides BusyBox's `free`).
 
 As a menu, I use `tofi`, with some minor tweaks to its [fullscreen configuration](https://github.com/philj56/tofi/blob/master/screenshot_fullscreen.png) that make the display larger and the prompt `>` instead of `run:`.
 
