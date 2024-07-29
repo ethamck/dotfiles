@@ -1,5 +1,8 @@
 # Most refresh times are derivative of 1440 (60 * 24) minutes
 
+@ Releases
+https://github.com/Builditluc/wiki-tui/releases.atom	"wiki-tui"
+
 @ Blogs {720}
 https://lukesmith.xyz/index.xml "Luke Smith"
 https://cobra.vern.cc/rss.xml "~cobra"

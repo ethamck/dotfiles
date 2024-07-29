@@ -3,6 +3,7 @@ default_floating_border pixel
 
 xwayland enable
 
+exec 'dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway'
 exec_always 'pkill gammastep; gammastep -O 3750K'
 
 
@@ -32,6 +33,8 @@ bindsym $mod+Shift+Insert exec "wtype $(sed 's/^#.*//' $(eval echo $snippets) | 
 bindsym $mod+XF86AudioPlay exec "pkill mpvpaper; yt-dlp $($menu < $(eval echo $cassette) | cut -f1) -o - | mpvpaper '*' - & swaymsg reload;"
 
 bindsym Print exec 'grim -g "$(slurp)" - | wl-copy'
+bindsym $mod+Print exec swaymsg -t get_tree | jq -r '.. | select(.pid? and .visible?) | "\(.rect.x+.window_rect.x),\(.rect.y+.window_rect.y) \(.window_rect.width)x\(.window_rect.height)"' | slurp | grim -g - - | wl-copy
+bindsym $mod+Shift+Print exec "grim -g $(slurp -p) -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-"
 
 bindsym XF86AudioMute exec 'wpctl set-mute @DEFAULT_SINK@ toggle'
 bindsym XF86AudioRaiseVolume exec 'wpctl set-volume @DEFAULT_SINK@ 5%+'
@@ -105,7 +108,7 @@ output * background "$(find ${XDG_DATA_HOME:-$HOME/.local/share}/backgrounds/ -t
 output 'BOE 0x095F Unknown' resolution 2256x1504 position 1080,1080 scale 1.0
 	bindswitch --reload --locked lid:on output 'BOE 0x095F Unknown' disable
 	bindswitch --reload --locked lid:off output 'BOE 0x095F Unknown' enable
-output 'Dell Inc. SE2717H/HX 93JWK98V1C2S' resolution 1920x1080@75Hz position 1600,0
+output 'Dell Inc. SE2717H/HX 93JWK98V1C2S' resolution 1920x1080@75Hz position 1600,0 adaptive_sync on
 output 'Dell Inc. DELL E2010H C201R06PAMLU' resolution 1600x900 position 0,180
 output 'Stargate Technology M156F01 Unknown' resolution 1920x1080 position 3520,0
 

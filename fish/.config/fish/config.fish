@@ -15,17 +15,20 @@ set -x XDG_STATE_HOME "$HOME/.local/state"
 	set -x LESSHISTFILE ""
 
 set -x GTK_THEME 'Adwaita:dark'
+set -x QT_QPA_PLATFORM 'wayland'
+
 set -x GPG_TTY (tty)
 
 
 if status is-login
 	gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+	set -x XDG_CURRENT_DESKTOP 'sway'
 	sleep 1 && sway
 end
 
 if status is-interactive
 	abbr -a !! --position anywhere "$history[1]"
-	alias l 'ls -1AhFL --group-directories-first'
+	alias l 'ls -1AhFLX --group-directories-first'
 	abbr -a mkdir 'mkdir -p'
 	abbr -a q 'bg; disown; exit'
 	abbr -a o 'open'
@@ -37,6 +40,7 @@ if status is-interactive
 	abbr -a giet 'git clone'
 	abbr -a ~radio "mpv 'https://azuracast.tilderadio.org/radio/8000/320k.ogg'"
 	alias relog 'pkill -u (whoami)'
+	alias hibernate 'echo disk | doas tee /sys/power/state'
 
 	function pcp -w 'pass' -d "Copy a password to clipboard"
 		pass $argv | head -n1 | wl-copy
@@ -51,10 +55,6 @@ if status is-interactive
 	end
 	function yts -w 'yt-dlp' -d "Search the first fifteen YouTube videos for query"
 		yt-dlp -O "$(tput dim)%(id)s %(upload_date)s$(tput sgr0) %(channel)s - %(title)s" ytsearch15:"$argv"
-	end
-
-	function color-picker -d "Pick a color on screen"
-		grim -g (slurp -p) -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:-
 	end
 
 	# Dotfile removal
