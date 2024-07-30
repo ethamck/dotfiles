@@ -25,7 +25,7 @@ The bar is the regular `swaybar`. I don't like that Sway includes it by default,
 
 As a menu, I use `tofi`, with some minor tweaks to its [fullscreen configuration](https://github.com/philj56/tofi/blob/master/screenshot_fullscreen.png) that make the display larger and the prompt `>` instead of `run:`.
 
-The keyboard layout is Workman, but modifiers are shifted so that Left Hyper → Escape → Right Alt → Left Control → Tab → Grave → Backspace → Caps, where `→` means "is bound on". To simplify, the left column is rebound as Hyper Tab Backspace Shift AltGr and AltGr is Escape. If it seems that Control has too large a prevalence, it's a relic of my Emacs use, but it still helps in other apps. This configuration does quite well on both editors.
+The keyboard layout is Workman, but modifiers are shifted so that Left Hyper → Escape → Right Alt → Left Control → Tab → Grave → Backspace → Caps, where `→` means "is bound on". To simplify, the left column is rebound as Hyper Tab Control Backspace Shift AltGr and AltGr is Escape. If it seems that Control has too large a prevalence, it's a relic of my Emacs use, but it still helps in other apps. This configuration does quite well on both editors.
 
 If you have a trackpad, you can switch between layouts (mine and QWERTY, by default) using a four-fingered swipe in either direction. This can be extremely useful in games.
 
