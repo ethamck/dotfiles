@@ -1,5 +1,6 @@
 alias firefox 'firefox --new-tab'
 set -x BROWSER 'firefox'
+set -x FILES 'yazi'
 set -x EDITOR 'kak'
 set -x SEARCH 'ddgr'
 

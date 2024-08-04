@@ -24,7 +24,7 @@ set $cassette '${XDG_DATA_HOME:-$HOME/.local/share}/cassette'
 
 bindsym $mod+space exec swaymsg exec $($menu-run)
 bindsym $mod+Return exec $term
-bindsym $mod+Shift+Return exec $term $EDITOR
+bindsym $mod+Shift+Return exec $term fish -C $FILES
 bindsym $mod+Shift+Slash exec $term $SEARCH
 
 bindsym $mod+u exec wtype "$(printf 'import sys, unicodedata\nfor i in range(sys.maxunicode):\n\ttry:\n\t\tprint(\"%%s\\t%%s\\t%%s\" %% (hex(i), chr(i), unicodedata.name(chr(i))))\n\texcept ValueError:\n\t\tpass' | python | $menu | cut -f2)"
