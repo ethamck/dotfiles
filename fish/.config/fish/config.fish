@@ -42,6 +42,11 @@ if status is-interactive
 	alias relog 'pkill -u (whoami)'
 	alias hibernate 'echo disk | doas tee /sys/power/state'
 
+	function cwd -d "Change the directory that new shells will begin in"
+		cd $argv
+		set -U CUSTOM_WD $argv
+	end
+
 	function pcp -w 'pass' -d "Copy a password to clipboard"
 		pass $argv | head -n1 | wl-copy
 	end
@@ -60,4 +65,10 @@ if status is-interactive
 	# Dotfile removal
 	alias wget 'wget --hsts-file="/tmp/wget-history"'
 	rm -fr ~/.pki ~/.gnome2 ~/.links ~/.surf ~/.grip
+
+	if test -d $CUSTOM_WD
+		cd $CUSTOM_WD
+	else
+		set -e CUSTOM_WD
+	end
 end
