@@ -105,7 +105,7 @@ bindsym $mod+minus move scratchpad
 bindsym $mod+Shift+minus scratchpad show
 
 
-output * background "$(find ${XDG_DATA_HOME:-$HOME/.local/share}/backgrounds/ -type f -not -name '.*' | shuf -n1)" fill
+output * background "$(find ${XDG_DATA_HOME:-$HOME/.local/share}/backgrounds/ -type f -name '*.jpeg' | shuf -n1)" fill
 output 'BOE 0x095F Unknown' resolution 2256x1504 position 1080,1080 scale 1.0
 	bindswitch --reload --locked lid:on output 'BOE 0x095F Unknown' disable
 	bindswitch --reload --locked lid:off output 'BOE 0x095F Unknown' enable
@@ -121,6 +121,7 @@ exec swayidle -w \
 
 # at ~/.config/xkb/workman-shift
 input type:keyboard xkb_layout workman-shift,us
+input type:touchpad click_method button_areas
 bindgesture swipe:4:left input type:keyboard xkb_switch_layout prev
 bindgesture swipe:4:right input type:keyboard xkb_switch_layout next
 

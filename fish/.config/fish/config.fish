@@ -16,7 +16,7 @@ set -x XDG_STATE_HOME "$HOME/.local/state"
 	set -x LESSHISTFILE ""
 
 set -x GTK_THEME 'Adwaita:dark'
-set -x QT_QPA_PLATFORM 'wayland'
+set -x QT_QPA_PLATFORM 'xcb'
 
 set -x GPG_TTY (tty)
 
@@ -73,3 +73,6 @@ if status is-interactive
 		set -e CUSTOM_WD
 	end
 end
+
+# Created by `pipx` on 2024-08-06 19:12:19
+set PATH $PATH /home/ethan/.local/bin
